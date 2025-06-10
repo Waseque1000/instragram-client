@@ -5,6 +5,7 @@ export default function InstagramDownloader() {
   const [url, setUrl] = useState('');
   const [loading, setLoading] = useState(false);
   const [imageData, setImageData] = useState(null);
+  console.log(imageData)
   const [error, setError] = useState('');
   const [success, setSuccess] = useState('');
 
@@ -195,7 +196,7 @@ export default function InstagramDownloader() {
                 <img
                   src={imageData.url}
                   alt="Instagram image"
-                  className="max-w-full h-auto max-h-96 object-contain mx-auto rounded-xl shadow-md"
+                  className="   object-contain mx-auto rounded-xl shadow-md"
                 />
               </div>
               <div className="flex justify-center gap-4">
@@ -247,3 +248,5 @@ export default function InstagramDownloader() {
     </div>
   );
 }
+
+ 
